@@ -1,71 +1,107 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	    <meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ohjeistus</title>
-    </head>
-<link rel ="stylesheet" type="text/css" href="css/style.css">
-    <body>
-        <div id="container">
-        <header>
-            <img class="logo" src="kuvat/logo.png" alt="logo">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="#">Filler</a></li>
-            </ul>
-        </nav>
-        <a class="cta" href="https://koodihaaste.solidabis.com/?fbclid=IwAR0DgOZ2ooXCMkiwAycNuTBQSyAVznm08WrLYYwRfa-lBPtueB-cgAplFGk#/" target="_blank"><button>Solidabis koodihaaste</button></a>
-        </header>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koodihaaste</title>
+</head>
+
+<link rel ="stylesheet" type="text/css" href="css/styles.css">
+
+<body>
+	
 
 
-            <div id="keskikenttä">
-                    <p>
-                        Kesälomat lähestyvät ja monien katseet kääntyvät kohti kesämökkejä. Osalla nämä löytyvät lähempää, osalla taas matkustukseen kuluu pitkiäkin aikoja. Monesti tien päällä ollessa tuntuu siltä, että jos hieman vielä kiihdyttäisi, olisi perillä merkittävästi nopeammin… vai olisiko sittenkään? Ovatko voitetut minuutit kasvaneiden matkakustannusten arvoisia? Entä kuinka paljon matkustusajoneuvon tyyppi vaikuttaa tähän?
-                        <br><br>
-                        Tehtävänäsi on toteuttaa autoilumittari-sovellus. Sovelluksen tulee pystyä suorittamaan vertailu matka-ajan ja polttoaineen kulutuksen välillä kahden eri valitun nopeuden mukaan: käyttäjä ilmoittaa saman matkustettavan etäisyyden samalla kulkuneuvotyypillä eri nopeuksilla ja sovellus laskee miten paljon nopeammin käyttäjä on perillä ja kuinka paljon enemmän polttoainetta tähän kuluu. Etäisyyden sekä kulkuneuvotyypin tulee siis olla molemmissa samat. Sovelluksen tulee pystyä näyttämään web-käyttöliittymässä molemmista annetuista matkanopeuksista käytetty aika ja polttoaine, sekä näiden kahden ero.
-                        <br><br>
-                        Sovelluksessa tulee pystyä tarkastelemaan kolmen erilaisen auton tuloksia. Autojen bensankulutus kasvaa 1.009 kulmakertoimella. Eli jos auton nopeus kasvaa 1km/h, niin bensankulutus kasvaa 1.009 kertaiseksi. Eri autojen bensakulutus 1km/h nopeudella on seuraava:
-                    </p>
-                            <ul>
-                                <li>Auto A: 3l / 100km</li>
-                                <li>Auto B: 3.5l / 100km</li>
-                                <li>Auto C: 4l / 100km</li>
-                            </ul>
-                    <p>
-                        Toteutuksessa käytettävät teknologiat ovat vapaasti päätettävissäsi. Tehtävässä ei välttämättä ole tarpeen tehdä erillistä backend-toteutusta, mutta voit sen halutessasi tehdä. Tehtävässä ei saa käyttää mitään kolmannen osapuolen palvelua tai kirjastoa, mikä toteuttaa vaaditut vertailutoimenpiteet.
-                    </p>
-            </div>
-        </div>
-        <footer id="footer">
-            <div id="footer-container">
-                <div id="footer-row">
-                    <div id="footer-col">
-                            <h4>Extra</h4>
-                            <p>© 2021 Kim Poutanen</p>
-                     </div><!--footer col-->
-                     <div id="footer-col">
-                        <h4>Yhteystiedot</h4>
-                            <address>
-                                <ul>
-                                    <li>Rauhankatu 10, Lahti</li>
-                                    <li>puh. 0443353375</li>
-                                    <li>kimpoutanen@hotmail.com</li>
-                                </ul>
-                            </address>
-                     </div> <!--footer col-->
-                     <div id="footer-col">
-                        <h4>Sosiaalisen median linkit</h4>
-                        <div id="socials">
-                                <a href="https://www.facebook.com/kimpout" target="_blank"><i class="fab fa-facebook-f"></i> </a>
-                                <a href="https://twitter.com/daqful" target="_blank"><i class="fab fa-twitter"></i> </a>
-                                <a href="https://www.linkedin.com/in/kim-poutanen-279608207/" target="_blank"><i class="fab fa-linkedin-in"></i> </a>
-                                <a href="https://github.com/KimPoutanen" target="_blank"><i class="fab fa-github"></i> </a>
-                        </div><!--social-->
-                    </div> <!--footer col-->
-                </div> <!--footer row-->
-            </div> <!--footer container-->
-        </footer>
-    </body>
+<div id="container">
+<header>
+	<img class="logo" src="kuvat/logo.png" alt="logo">
+<nav>
+	<ul class="nav__links">
+		<li><a href="index.html">Etusivu</a></li>
+		<li><a href="firstGame.html">RockPaperScissor</a></li>
+	</ul>
+</nav>
+<a class="cta" href="#"><button>Information about me</button></a>
+</header>
+
+
+
+
+
+
+<div id="main">
+		
+			<p id="ohje"><b>Valitse haluamallasi autolla kaksi(2) eri nopeutta matkallesi. 
+			Sovellus laskee polttoaineen kulutuksen sekä matkaan kuluvan ajan.
+			Sovellus kertoo myös kulutuksen eron ja aikaeron.
+			</b></p>
+		
+	<div id="valintaboxit">			
+		<form id="valinta">
+		<p id="kulutusotsikko"><b>Valitse auton kulutus</b></p> <br>
+		<select id="autoValinta">
+			<option value="A">Auto A: 3L/100km</option>
+			<option value="B">Auto B: 3.5L/100km</option>
+			<option value="C">Auto C: 4L/100km</option>
+		</select>
+		</form>
+			 <br> <br>
+		
+		
+				<form id="form">
+					<label for="Auto1">Auton nopeus1</label>
+					<input type="number" id="auto1" name="auto1" placeholder="kirjoita tähän.." required> <br><br>
+					
+					<label for="Auto2">Auton nopeus2 </label>
+					<input type="number" id="auto2" name="auto2" placeholder="kirjoita tähän.." required><br><br>
+					
+					<label for="kilometrit">Matka kilometreinä</label> 
+					<input type="number" id="Matka" name="Matka" placeholder="kirjoita tähän.." required> <br><br>
+					
+					<input type="submit" onclick="laskuri1()" value="submit">
+				</form>
+	</div>	 <!--valintaboxit-->		
+	<div id="vastaukset">
+		<h2>Vastaukset tulevat alle näkyviin painettuasi "submit" -nappulaa.</h2> <br>
+		<p id="vastaus"> </p> 
+	</div> <!-- vastaukset-->
+	</div> <!-- main-->
+</div> <!-- container-->
+
+
+
+<footer id="footer">
+	<div id="footer-container">
+		<div id="footer-row">
+			<div id="footer-col">
+					<h4>Extra</h4>
+					<p>© 2021 Kim Poutanen</p>
+			 </div><!--footer col-->
+			 <div id="footer-col">
+				<h4>Yhteystiedot</h4>
+					<address>
+						<ul>
+							<li>Rauhankatu 10, Lahti</li>
+							<li>puh. 0443353375</li>
+							<li>kimpoutanen@hotmail.com</li>
+						</ul>
+					</address>
+			 </div> <!--footer col-->
+			 <div id="footer-col">
+				<h4>Sosiaalisen median linkit</h4>
+				<div id="socials">
+						<a href="https://www.facebook.com/kimpout" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+						<a href="https://twitter.com/daqful" target="_blank"><i class="fab fa-twitter"></i> </a>
+						<a href="https://www.linkedin.com/in/kim-poutanen-279608207/" target="_blank"><i class="fab fa-linkedin-in"></i> </a>
+						<a href="https://github.com/KimPoutanen" target="_blank"><i class="fab fa-github"></i> </a>
+				</div><!--social-->
+			</div> <!--footer col-->
+		</div> <!--footer row-->
+	</div> <!--footer container-->
+</footer>
+
+<script src="js/skriptit.js"></script>
+</body>
 </html>
