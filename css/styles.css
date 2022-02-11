@@ -70,7 +70,7 @@ header {
 	display:flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 30px 10%;
+	padding: 15px 10%;
 	background-color: #202729;
 }
 
@@ -110,7 +110,7 @@ button:hover {
 }
 #footer {
 	background-color: #202729;
-	padding: 40px 0 20px 0;
+	padding: 20px 0 5px 0;
 	margin-top: auto;
 }
 #footer-container {
