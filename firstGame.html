@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koodihaaste</title>
+</head>
+
+<link rel ="stylesheet" type="text/css" href="css/styles.css">
+
+<body>
+	
+
+
+<div id="container">
+<header>
+	<img class="logo" src="kuvat/logo.png" alt="logo">
+<nav>
+	<ul class="nav__links">
+		<li><a href="index.html">Etusivu</a></li>
+		<li><a href="firstGame.html">RockPaperScissor</a></li>
+	</ul>
+</nav>
+<a class="cta" href="Info.html"><button>Info</button></a>
+</header>
+
+
+
+
+
+
+<div id="main">
+		
+			<p id="ohje"><b>Tällä sivulla voit pelata kivi-sakset-paperia tietokonetta vastaan.
+			</b></p>
+		
+	<div id="valintaboxit">			
+			 <br> <br>
+             <div class="media-scroller snaps-inline">
+                 
+                <div class ="media-element">
+
+                    
+                    <img class="paperikuva" src="kuvat/paperi.png" alt="paperi">
+                    <button type="button" onclick="KPS()" class="paperiButton">
+                        <span class="button__text">Paperi</span>
+                   <!--- <p class="title">Paperi</p> -->
+                    </button>
+
+                </div>
+
+                <div class ="media-element">
+                    
+                    <img class="saksikuva" src="kuvat/sakset.jpg" alt="sakset">
+                    <button type="button" onclick="KPS()" class="saksetButton">
+                        <span class="button__text">sakset</span>
+                    </button>
+                  <!--  <p class="title">Sakset</p> -->
+                </div>
+
+                <div class ="media-element">
+                   
+                    <img class="kivikuva" src="kuvat/kivi.jpg" alt="kivi">
+                    <button type="button" onclick="KPS()" class="kiviButton">
+                        <span class="button__text">Kivi</span>
+                   <!-- <p class="title">Kivi</p> -->
+                </div>
+                
+                
+            </div> <!-- kuva scrolleri-->
+          
+	</div>			
+	<div id="vastaukset">
+		<h2>3 laatikko</h2> <br>
+        
+		<p id="vastaus"> </p> 
+	</div> <!-- vastaukset-->
+	</div> <!-- main-->
+</div> <!-- container-->
+
+
+
+<footer id="footer">
+	<div id="footer-container">
+		<div id="footer-row">
+			<div id="footer-col">
+					<h4>Extra</h4>
+					<p>© 2021 Kim Poutanen</p>
+			 </div><!--footer col-->
+			 <div id="footer-col">
+				<h4>Yhteystiedot</h4>
+					<address>
+						<ul>
+							<li>Rauhankatu 10, Lahti</li>
+							<li>puh. 0443353375</li>
+							<li>kimpoutanen@hotmail.com</li>
+						</ul>
+					</address>
+			 </div> <!--footer col-->
+			 <div id="footer-col">
+				<h4>Sosiaalisen median linkit</h4>
+				<div id="socials">
+						<a href="https://www.facebook.com/kimpout" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+						<a href="https://twitter.com/daqful" target="_blank"><i class="fab fa-twitter"></i> </a>
+						<a href="https://www.linkedin.com/in/kim-poutanen-279608207/" target="_blank"><i class="fab fa-linkedin-in"></i> </a>
+						<a href="https://github.com/KimPoutanen" target="_blank"><i class="fab fa-github"></i> </a>
+				</div><!--social-->
+			</div> <!--footer col-->
+		</div> <!--footer row-->
+	</div> <!--footer container-->
+</footer>
+
+<script src="js/skriptit.js"></script>
+<script src="js/peliScript.js"></script>
+</body>
+</html>

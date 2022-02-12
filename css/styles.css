@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
 
 body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-
+	background-color: #E3DBD9;
 }
 #keskikenttä {
 	font-size: 20px;
@@ -15,8 +16,8 @@ body {
 	padding: 10px 0 10px 40px;
 }
 #main {
-	background-color: #ffffff;
-	padding: 1em;
+	background-color: #E3DBD9;
+	padding: 2.3em;
 }
 #main {
 	display:grid;
@@ -24,7 +25,7 @@ body {
 	grid-gap: 2em;
 	grid-auto-rows: minmax(510px, auto);
 }
-#ohje, #kulutusotsikko {
+#ohje, #kulutusotsikko, #vastausOhje {
 	font-size: 24px;
 }
 #vastaus {
@@ -32,6 +33,9 @@ body {
 }
 #form label {
 	font-size: 20px;
+}
+#autoValinta {
+	border: 2px solid;
 }
 input[type=number] {
 	border: 2px solid;
@@ -176,4 +180,57 @@ button:hover {
 	#footer-col {
 		width: 100%;
 	}
+}
+
+
+.media-scroller {
+	inline-size: min(100% - 4rem, 70rem);
+	margin-inline: auto;
+	--väli: 1rem;
+
+	gap: var(--väli);
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 30%;
+
+	padding: 0 var(--väli) var(--väli);
+	
+	
+	overflow-x: auto;
+	overscroll-behavior-inline: contain;
+}
+.media-element {
+	display: grid;
+	grid-template-rows: min-content;
+	gap: var(--väli);
+	padding: var(--väli);
+	background: var(--surface-2);
+	border-radius: var(--radius-2);
+	box-shadow:  var(--shadow-5);
+
+}
+.media-element > img {
+	inline-size: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
+.snaps-inline {
+	scroll-snap-type: inline mandatory;
+	scroll-padding-inline: var(--väli, 1rem)
+}
+.snaps-inline > *{
+	scroll-snap-align: start;
+}
+
+.media-element > Button {
+	padding: 0;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+
+	box-sizing: 100%;
+
 }
