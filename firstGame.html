@@ -41,31 +41,25 @@
              <div class="media-scroller snaps-inline">
                  
                 <div class ="media-element">
-
-                    
                     <img class="paperikuva" src="kuvat/paperi.png" alt="paperi">
-                    <button type="button" onclick="KPS()" class="paperiButton">
-                        <span class="button__text">Paperi</span>
-                   <!--- <p class="title">Paperi</p> -->
-                    </button>
-
+                      <button id="paperiButton" type="button" onclick="kpsPaperi()">
+                          <span class="button__text">Paperi</span>
+                      </button>
                 </div>
 
                 <div class ="media-element">
                     
                     <img class="saksikuva" src="kuvat/sakset.jpg" alt="sakset">
-                    <button type="button" onclick="KPS()" class="saksetButton">
+                      <button id="saksetButton" type="button" onclick="kpsSakset()" >
                         <span class="button__text">sakset</span>
                     </button>
-                  <!--  <p class="title">Sakset</p> -->
                 </div>
 
                 <div class ="media-element">
-                   
                     <img class="kivikuva" src="kuvat/kivi.jpg" alt="kivi">
-                    <button type="button" onclick="KPS()" class="kiviButton">
+                      <button id="kiviButton" type="button" onclick="kpsKivi()" >
                         <span class="button__text">Kivi</span>
-                   <!-- <p class="title">Kivi</p> -->
+                     </button>
                 </div>
                 
                 
@@ -73,7 +67,7 @@
           
 	</div>			
 	<div id="vastaukset">
-		<h2>3 laatikko</h2> <br>
+		<h2 id="vastausOhje">Tästä osasta saat tietää mitä tietokone valitsi ja voititko.</h2> <br>
         
 		<p id="vastaus"> </p> 
 	</div> <!-- vastaukset-->
