@@ -61,7 +61,7 @@ btn3.addEventListener("click", function kpsKivi(event) {
    } else if(tiettari === "Sakset") {
          return document.getElementById("vastaus").innerHTML = "Tietokone valitsi sakset. Voitit pelin!"
    } else {
-    return document.getElementById("vastaus").innerHTML = "Tietokone valitsi kiven. Voitit pelin!"
+    return document.getElementById("vastaus").innerHTML = "Tietokone valitsi kiven. Tasapeli!"
    }
    
 
